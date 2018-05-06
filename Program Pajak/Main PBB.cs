@@ -38,6 +38,35 @@ namespace Program_Pajak
 
         }
         public static float lt, ht, lb, hb, jt, jb, njopd, njop, njkp, pbb;
+        public void Mpbb()
+        {
+            try
+            {
+                lt = Convert.ToSingle(ilt.Text);
+                ht = Convert.ToSingle(iht.Text);
+                lb = Convert.ToSingle(ilb.Text);
+                hb = Convert.ToSingle(ihb.Text);
+                jt = lt * ht;
+                jb = lb * hb;
+                njopd = jt + jb;
+                if (njopd >= 24000000)
+                {
+                    njop = njopd - 12000000;
+                }
+                else
+                {
+                    njop = njopd;
+                }
+                njkp = 0.2f * njop;
+                pbb = 0.005f * njkp;
+                hasilt.Text = pbb.ToString("c");
+            }
+            catch
+            {
+                MessageBox.Show("Data tidak boleh kosong.");
+            }
+
+        }
 
 
         private void ilt_TextChanged(object sender, EventArgs e)
@@ -121,35 +150,7 @@ namespace Program_Pajak
 
         public void button1_Click(object sender, EventArgs e)
         {
-
-
-            try
-            {
-                lt = Convert.ToSingle(ilt.Text);
-                ht = Convert.ToSingle(iht.Text);
-                lb = Convert.ToSingle(ilb.Text);
-                hb = Convert.ToSingle(ihb.Text);
-                jt = lt * ht;
-                jb = lb * hb;
-                njopd = jt + jb;
-                if (njopd >= 24000000)
-                {
-                    njop = njopd - 12000000;
-                }
-                else
-                {
-                    njop = njopd;
-                }
-                njkp = 0.2f * njop;
-                pbb = 0.005f * njkp;
-                hasilt.Text = pbb.ToString("c");
-            }
-            catch
-            {
-                MessageBox.Show("Data tidak boleh kosong.");
-            }
-
-
+            Mpbb();
         }
 
         private void hasilt_TextChanged(object sender, EventArgs e)
