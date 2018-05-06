@@ -118,16 +118,37 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="ypwlo1jw2hbrupgcasep" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ypwlo1jw2hbrupgcasep.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="NagaraDanaRakca" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\NagaraDanaRakca.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tata-cara-bayar-pbb.original" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tata-cara-bayar-pbb.original.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1[2]" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1[2].png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="a[1]" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\a[1].png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="pajak" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pajak.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="log" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\log.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="300mmx150mm-exit-left_ml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\300mmx150mm-exit-left_ml.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="BN-VR653_REARDO_GR_20171019130234" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BN-VR653_REARDO_GR_20171019130234.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Untitled-2[1]" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Untitled-2[1].png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ypwlo1jw2hbrupgcasep" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ypwlo1jw2hbrupgcasep.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cc-public_domain_mark_white.svg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cc-public_domain_mark_white.svg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

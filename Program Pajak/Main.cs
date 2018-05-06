@@ -16,19 +16,23 @@ namespace Program_Pajak
         public Main()
         {
             InitializeComponent();   
+
         }
 
         public void Main_Load(object sender, EventArgs e)
         {
-
-            
+            //this.AutoSize = true;
+            //this.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            //FormBorderStyle = FormBorderStyle.None;
+            //WindowState = FormWindowState.Maximized;
             user.Text ="Selamat Datang, "+Login.idl;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //button1.BackColor = Color.Transparent;
             Form1 form1 = new Form1();
-            this.Hide();
+            //this.Hide();
             form1.Show();
         }
 
@@ -50,9 +54,14 @@ namespace Program_Pajak
 
         private void button2_Click(object sender, EventArgs e)
         {
-            formppn formppn = new formppn();
-            this.Hide();
+            PPN formppn = new PPN();
+            //this.Hide();
             formppn.Show();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

@@ -117,6 +117,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="NagaraDanaRakca.png" />
+    <None Include="Resources\Cc-public_domain_mark_white.svg.png" />
+    <None Include="Resources\300mmx150mm-exit-left_ml.gif" />
+    <None Include="Resources\log.png" />
+    <None Include="Resources\Untitled-2[1].png" />
+    <None Include="Resources\1[2].png" />
+    <None Include="Resources\a[1].png" />
+    <None Include="Resources\tata-cara-bayar-pbb.original.jpg" />
     <None Include="Resources\BN-VR653_REARDO_GR_20171019130234.jpg" />
     <None Include="Resources\pajak.jpg" />
     <None Include="Resources\ypwlo1jw2hbrupgcasep.png" />

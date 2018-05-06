@@ -192,20 +192,20 @@ namespace Program_Pajak
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(149, 379);
+            this.label7.Location = new System.Drawing.Point(137, 378);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(120, 13);
+            this.label7.Size = new System.Drawing.Size(69, 13);
             this.label7.TabIndex = 15;
-            this.label7.Text = "Direktorat Jendral Pajak";
+            this.label7.Text = "Copyleft SEE";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(149, 402);
+            this.label8.Location = new System.Drawing.Point(137, 400);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(78, 13);
+            this.label8.Size = new System.Drawing.Size(129, 13);
             this.label8.TabIndex = 16;
-            this.label8.Text = "Copyright 2018";
+            this.label8.Text = "All Wrong Reseved  2018";
             // 
             // label9
             // 
@@ -256,7 +256,7 @@ namespace Program_Pajak
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(262, 415);
+            this.button2.Location = new System.Drawing.Point(713, 415);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 23;
@@ -275,10 +275,10 @@ namespace Program_Pajak
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::Program_Pajak.Properties.Resources.NagaraDanaRakca;
+            this.pictureBox1.Image = global::Program_Pajak.Properties.Resources.Cc_public_domain_mark_white_svg;
             this.pictureBox1.Location = new System.Drawing.Point(22, 343);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(107, 95);
+            this.pictureBox1.Size = new System.Drawing.Size(97, 95);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 14;
             this.pictureBox1.TabStop = false;

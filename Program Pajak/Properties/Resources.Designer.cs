@@ -63,9 +63,59 @@ namespace Program_Pajak.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1_2_ {
+            get {
+                object obj = ResourceManager.GetObject("1[2]", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _300mmx150mm_exit_left_ml {
+            get {
+                object obj = ResourceManager.GetObject("300mmx150mm-exit-left_ml", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap a_1_ {
+            get {
+                object obj = ResourceManager.GetObject("a[1]", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap BN_VR653_REARDO_GR_20171019130234 {
             get {
                 object obj = ResourceManager.GetObject("BN-VR653_REARDO_GR_20171019130234", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Cc_public_domain_mark_white_svg {
+            get {
+                object obj = ResourceManager.GetObject("Cc-public_domain_mark_white.svg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap log {
+            get {
+                object obj = ResourceManager.GetObject("log", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -86,6 +136,26 @@ namespace Program_Pajak.Properties {
         internal static System.Drawing.Bitmap pajak {
             get {
                 object obj = ResourceManager.GetObject("pajak", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tata_cara_bayar_pbb_original {
+            get {
+                object obj = ResourceManager.GetObject("tata-cara-bayar-pbb.original", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Untitled_2_1_ {
+            get {
+                object obj = ResourceManager.GetObject("Untitled-2[1]", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

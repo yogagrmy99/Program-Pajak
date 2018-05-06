@@ -12,7 +12,7 @@ using System.Windows.Forms;
 namespace Program_Pajak
 {
 
-    public partial class formppn : Form
+    public partial class PPN : Form
     {
         Stack sit = new Stack();
         Stack sht = new Stack();
@@ -20,7 +20,7 @@ namespace Program_Pajak
         string total1;
         int total2;
 
-        public formppn()
+        public PPN()
         {
             InitializeComponent();
         }
@@ -215,6 +215,13 @@ namespace Program_Pajak
         private void button4_Click(object sender, EventArgs e)
         {
             detail.Text = "";
+            item.Text = "";
+            total.Text = "";
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Hide();
         }
     }
 }
