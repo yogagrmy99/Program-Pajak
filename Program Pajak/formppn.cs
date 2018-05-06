@@ -16,6 +16,8 @@ namespace Program_Pajak
     {
         Stack sit = new Stack();
         Stack sht = new Stack();
+        string item1;
+        string total1;
 
         public formppn()
         {
@@ -31,14 +33,41 @@ namespace Program_Pajak
         {
             
         }
+        
+        public void hitungppn()
+        {
+            //int sum = sht.sum();
+
+            /*(foreach (int total in sht)
+            {
+                total1 += total;   
+            }
+            return total1; */
+        }
 
         private void button1_Click(object sender, EventArgs e) //this is proceed button for Push stack
         {
-            sit.Push(item);
-            int count1 = sit.Count;
-            int count2 = sht.Count;
-            si.Text = "Total Item : " + count1.ToString();
-            
+            //if (item.Text == "" || item.Text == " ")
+            if (item.Text == "" || total.Text == "")
+            {
+                MessageBox.Show("Tidak Boleh Kosong.");
+                item.Text = "";
+                total.Text = "";
+                
+            }
+            else
+            {
+                item1 = Convert.ToString(item);
+                total1 = Convert.ToString(total);
+                sit.Push(item1);
+                sht.Push(total1);
+                int count1 = sit.Count;
+                int count2 = sht.Count;
+                si.Text = "Total Item : " + count1.ToString();
+                st.Text = "Total Item : " + count2.ToString();
+                //hitungppn();
+                //detail.Text = total1.ToString();
+            }
         }
 
         private void si_Click(object sender, EventArgs e)
@@ -50,14 +79,53 @@ namespace Program_Pajak
         {
             try
             {
-                sit.Pop();
-                int count1 = sit.Count;
-                si.Text = "Total Item : " + count1.ToString();
+                    sit.Pop();
+                    sht.Pop();
+                    int count1 = sit.Count;
+                    int count2 = sht.Count;
+                    si.Text = "Total Item : " + count1.ToString();
+                    st.Text = "Harga Total : " + count2.ToString();
             }
             catch
             {
                 MessageBox.Show("Item anda sudah kosong");
             }
+        }
+
+        private void total_TextChanged(object sender, EventArgs e)
+        {
+            if (System.Text.RegularExpressions.Regex.IsMatch(total.Text, "[^0-9]"))
+            {
+                MessageBox.Show("Please enter only numbers.");
+                total.Text = total.Text.Remove(total.Text.Length - 1);
+            }
+        }
+
+        private void item_TextChanged(object sender, EventArgs e)
+        {
+           
+            
+            
+        }
+
+        private void st_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            //hitungppn();
+            foreach (string total in sht)
+            {
+                detail.Text += total.ToString();
+            }
+            
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            detail.Text = "";
         }
     }
 }

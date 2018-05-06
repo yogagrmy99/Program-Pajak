@@ -39,6 +39,7 @@ namespace Program_Pajak
             double njkp = (float)Convert.ToDouble(Form1.njkp);
             hht.Text = "";
             hht.Text += "Detail Perhitungan" + Environment.NewLine + Environment.NewLine + "Luas Tanah Anda         : " + Form1.lt + "m" + Environment.NewLine + "Nilai Jual Tanah : Rp" + Form1.ht + Environment.NewLine + "Luas Bangunan Anda : " + Form1.lb + "m" + Environment.NewLine + "Nilai Jual Bangunan Anda : Rp" + jb + Environment.NewLine + Environment.NewLine + "Harga Jual Tanah : Rp" + jt + Environment.NewLine + "Harga Jual Bangunan : Rp" + jb + Environment.NewLine + "NJOP dasar adalah : Rp" + njop + Environment.NewLine + "NJOP PBB adalah : Rp" + njop + Environment.NewLine + "NJKP adalah : Rp" + njkp+Environment.NewLine +"PBB Adalah : Rp"+Form1.pbb ;
+           
         }
 
         private void pbbhitung_Load(object sender, EventArgs e)
