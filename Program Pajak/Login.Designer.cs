@@ -95,12 +95,13 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(511, -6);
+            this.button2.Location = new System.Drawing.Point(414, 139);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(16, 19);
+            this.button2.Size = new System.Drawing.Size(16, 23);
             this.button2.TabIndex = 6;
             this.button2.Text = "?";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Login
             // 

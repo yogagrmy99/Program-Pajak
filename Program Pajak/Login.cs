@@ -49,5 +49,11 @@ namespace Program_Pajak
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            C hello = new C();
+            hello.Show();
+        }
     }
 }
