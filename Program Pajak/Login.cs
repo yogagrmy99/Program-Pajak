@@ -25,7 +25,7 @@ namespace Program_Pajak
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (id.Text=="yoga" && pw.Text=="generic123" || id.Text == "yoga1" && pw.Text == "1" || id.Text=="admin" &&pw.Text=="admin")
+            if (id.Text=="Yoga" && pw.Text=="generic123" || id.Text == "yoga1" && pw.Text == "1" || id.Text=="admin" &&pw.Text=="admin")
                 {
                 MessageBox.Show("Berhasil Masuk.");
                 Main main = new Main();
