@@ -35,7 +35,6 @@
             this.button1 = new System.Windows.Forms.Button();
             this.si = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
-            this.st = new System.Windows.Forms.Label();
             this.detail = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -106,16 +105,6 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // st
-            // 
-            this.st.AutoSize = true;
-            this.st.Location = new System.Drawing.Point(228, 215);
-            this.st.Name = "st";
-            this.st.Size = new System.Drawing.Size(35, 13);
-            this.st.TabIndex = 6;
-            this.st.Text = "label3";
-            this.st.Click += new System.EventHandler(this.st_Click);
-            // 
             // detail
             // 
             this.detail.Location = new System.Drawing.Point(466, 63);
@@ -153,7 +142,6 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.detail);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.st);
             this.Controls.Add(this.si);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.total);
@@ -177,7 +165,6 @@
         public System.Windows.Forms.TextBox total;
         public System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label st;
         private System.Windows.Forms.TextBox detail;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
