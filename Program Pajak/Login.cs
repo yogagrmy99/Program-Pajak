@@ -49,11 +49,25 @@ namespace Program_Pajak
         {
 
         }
-
+        private const int WS_SYSMENU = 0x80000;
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                CreateParams cp = base.CreateParams;
+                cp.Style &= ~WS_SYSMENU;
+                return cp;
+            }
+        }
         private void button2_Click(object sender, EventArgs e)
         {
             C hello = new C();
             hello.Show();
+        }
+
+        private void exit_Click(object sender, EventArgs e)
+        {
+            Environment.Exit(0);
         }
     }
 }

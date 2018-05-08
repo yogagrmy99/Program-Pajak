@@ -18,7 +18,7 @@ namespace Program_Pajak
         Stack sht = new Stack();
         string item1;
         string total1;
-        int total2;
+        float total2;
 
         public PPN()
         {
@@ -37,14 +37,23 @@ namespace Program_Pajak
         
         public void hitungppn()
         {
-            
-            foreach (string total1 in sht)
+            try
             {
-                total2 += ((Int32.Parse(total1)/10));
-                //total2 += total2 / 10;
-                
+
+                foreach (string total1 in sht)
+                {
+                    total2 += ((Single.Parse(total1) / 10));
+                    //total2 += total2 / 10;
+                }
+                //detail.Text = total2.ToString();
             }
-            //detail.Text = total2.ToString();
+            catch
+            {
+                sit.Clear();
+                sht.Clear();
+                MessageBox.Show("Inputan salah. Daftar Barang Dihapus. Silakan Mulai dari awal");
+                cleartext();
+            }
         }
 
         private void button1_Click(object sender, EventArgs e) //this is proceed button for Push stack
@@ -96,7 +105,7 @@ namespace Program_Pajak
 
         private void total_TextChanged(object sender, EventArgs e)
         {
-            if (System.Text.RegularExpressions.Regex.IsMatch(total.Text, "[^0-9]"))
+             if (System.Text.RegularExpressions.Regex.IsMatch(total.Text, "[^0-9]"))
             {
                 MessageBox.Show("Please enter only numbers.");
                 total.Text = total.Text.Remove(total.Text.Length - 1);
@@ -117,106 +126,46 @@ namespace Program_Pajak
             hitungppn();
             try
             {
-                
-                detail.Text += sit.Peek() + " ";
-                detail.Text += "Rp" + sht.Peek();
-                sit.Pop();
-                sht.Pop();
-                detail.Text += Environment.NewLine;
-                detail.Text += sit.Peek()+" ";
-                detail.Text += "Rp" + sht.Peek();
-                sit.Pop();
-                sht.Pop();
-                detail.Text += Environment.NewLine;
-                detail.Text += sit.Peek() + " ";
-                detail.Text += "Rp" + sht.Peek();
-                sit.Pop();
-                sht.Pop();
-                detail.Text += Environment.NewLine;
-                detail.Text += sit.Peek() + " ";
-                detail.Text += "Rp" + sht.Peek();
-                sit.Pop();
-                sht.Pop();
-                detail.Text += Environment.NewLine;
-                detail.Text += sit.Peek() + " ";
-                detail.Text += "Rp" + sht.Peek();
-                sit.Pop();
-                sht.Pop();
-                detail.Text += Environment.NewLine;
-                detail.Text += sit.Peek() + " ";
-                detail.Text += "Rp" + sht.Peek();
-                sit.Pop();
-                sht.Pop();
-                detail.Text += Environment.NewLine;
-                detail.Text += sit.Peek() + " ";
-                detail.Text += "Rp" + sht.Peek();
-                sit.Pop();
-                sht.Pop();
-                detail.Text += Environment.NewLine;
-                detail.Text += sit.Peek() + " ";
-                detail.Text += "Rp" + sht.Peek();
-                sit.Pop();
-                sht.Pop();
-                detail.Text += Environment.NewLine;
-                detail.Text += sit.Peek() + " ";
-                detail.Text += "Rp" + sht.Peek();
-                sit.Pop();
-                sht.Pop();
-                detail.Text += Environment.NewLine;
-                detail.Text += sit.Peek() + " ";
-                detail.Text += "Rp" + sht.Peek();
-                sit.Pop();
-                sht.Pop();
-                detail.Text += Environment.NewLine;
-                detail.Text += sit.Peek() + " ";
-                detail.Text += "Rp" + sht.Peek();
-                sit.Pop();
-                detail.Text += Environment.NewLine;
-                detail.Text += sit.Peek() + " ";
-                detail.Text += "Rp" + sht.Peek();
-                sit.Pop();
-                sht.Pop();
-                detail.Text += Environment.NewLine;
-                detail.Text += sit.Peek() + " ";
-                detail.Text += "Rp" + sht.Peek();
-                sit.Pop();
-                sht.Pop();
-                detail.Text += Environment.NewLine;
-                detail.Text += sit.Peek() + " ";
-                detail.Text += "Rp" + sht.Peek();
-
-
+                while (sht.Count != 0 && sit.Count!=0)
+                    
+                    {
+                        detail.Text += sit.Peek() + " ";
+                        detail.Text += "Rp" + sht.Peek();
+                        sit.Pop();
+                        sht.Pop();
+                        detail.Text += Environment.NewLine;
+                    }
+                si.Text = "Total Item : 0";
             }
             catch
             {
                 MessageBox.Show("Selesai");
             }
-            detail.Text += Environment.NewLine+"Pajak yang harus dibayarkan : Rp" + total2;
+            if (total2 != 0)
+            {
+                detail.Text += Environment.NewLine + "Pajak yang harus dibayarkan : Rp" + total2;
+            }
+            total2 = 0;
         }
         private void button3_Click(object sender, EventArgs e)
         {
-            //hitungppn();
-            /*foreach (string item1 in sit)
-            {
-                detail.Text += item1;
-                detail.Text += "   ";
-                foreach (string total1 in sht)
-                {
-                    detail.Text += total1;
-                    sht.Pop();
-                }
-                detail.Text += Environment.NewLine;
-                sit.Pop(); */
-
+            cleartext();
             fungsitbl();
-            si.Text="";
+            //si.Text="";
         }
-
-        private void button4_Click(object sender, EventArgs e)
+        public void cleartext()
         {
             detail.Text = "";
             item.Text = "";
             total.Text = "";
+        }
+        private void button4_Click(object sender, EventArgs e)
+        {
+            sit.Clear();
+            sht.Clear();
+            total2 = 0;
+            si.Text = "Total Item : 0";
+            cleartext();        
         }
 
         private void button5_Click(object sender, EventArgs e)

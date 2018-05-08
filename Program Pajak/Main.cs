@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Permissions;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -12,6 +13,7 @@ namespace Program_Pajak
 {
     public partial class Main : Form
     {
+   
         Login login = new Login();
         public Main()
         {
@@ -21,19 +23,13 @@ namespace Program_Pajak
 
         public void Main_Load(object sender, EventArgs e)
         {
-            //this.AutoSize = true;
-            //this.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            //FormBorderStyle = FormBorderStyle.None;
-            //WindowState = FormWindowState.Maximized;
             user.Text ="Selamat Datang, "+Login.idl;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //button1.BackColor = Color.Transparent;
-            Form1 form1 = new Form1();
-            //this.Hide();
-            form1.Show();
+            Form1 f1 = new Form1();
+            f1.Show();
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -43,8 +39,15 @@ namespace Program_Pajak
 
         private void button4_Click(object sender, EventArgs e)
         {
-            this.Hide();
+
+            //this.Hide();
+            for (int i = Application.OpenForms.Count - 1; i >= 0; i--)
+            {
+                if (Application.OpenForms[i].Name != "Login")
+                    Application.OpenForms[i].Close();
+            }
             login.Show();
+            
         }
 
         private void button5_Click(object sender, EventArgs e)
