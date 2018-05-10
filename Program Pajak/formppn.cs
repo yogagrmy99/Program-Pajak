@@ -30,7 +30,7 @@ namespace Program_Pajak
               
         }
 
-        private void formppn_Load(object sender, EventArgs e)//kinda confused, placing stack in which function
+        private void formppn_Load(object sender, EventArgs e)
         {
             
         }
@@ -43,9 +43,9 @@ namespace Program_Pajak
                 foreach (string total1 in sht)
                 {
                     total2 += ((Single.Parse(total1) / 10));
-                    //total2 += total2 / 10;
+                    
                 }
-                //detail.Text = total2.ToString();
+                
             }
             catch
             {
@@ -56,9 +56,8 @@ namespace Program_Pajak
             }
         }
 
-        private void button1_Click(object sender, EventArgs e) //this is proceed button for Push stack
+        private void button1_Click(object sender, EventArgs e) 
         {
-            //if (item.Text == "" || item.Text == " ")
             if (item.Text == "" || total.Text == "")
             {
                 MessageBox.Show("Tidak Boleh Kosong.");
@@ -75,9 +74,6 @@ namespace Program_Pajak
                 int count1 = sit.Count;
                 int count2 = sht.Count;
                 si.Text = "Total Item : " + count1.ToString();
-                //st.Text = "Total Item : " + count2.ToString();
-                //hitungppn();
-                //detail.Text = total1.ToString();
             }
         }
 
@@ -95,7 +91,6 @@ namespace Program_Pajak
                     int count1 = sit.Count;
                     int count2 = sht.Count;
                     si.Text = "Total Item : " + count1.ToString();
-                    //st.Text = "Harga Total : " + count2.ToString();
             }
             catch
             {
@@ -150,8 +145,15 @@ namespace Program_Pajak
         private void button3_Click(object sender, EventArgs e)
         {
             cleartext();
-            fungsitbl();
-            //si.Text="";
+            if (sht.Count != 0)
+            {
+                fungsitbl();
+            }
+            else
+            {
+                detail.Text = "Item anda Kosong";
+            }
+
         }
         public void cleartext()
         {
