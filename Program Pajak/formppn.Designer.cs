@@ -114,6 +114,7 @@
             this.detail.Name = "detail";
             this.detail.Size = new System.Drawing.Size(288, 223);
             this.detail.TabIndex = 8;
+            this.detail.TextChanged += new System.EventHandler(this.detail_TextChanged);
             // 
             // button3
             // 

@@ -58,7 +58,7 @@ namespace Program_Pajak
 
         private void button1_Click(object sender, EventArgs e) 
         {
-            if (item.Text == "" || total.Text == "")
+            if (item.Text == "" || total.Text == " " || total.Text == "  " || total.Text == "  ")
             {
                 MessageBox.Show("Tidak Boleh Kosong.");
                 item.Text = "";
@@ -173,6 +173,11 @@ namespace Program_Pajak
         private void button5_Click(object sender, EventArgs e)
         {
             this.Hide();
+        }
+
+        private void detail_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
