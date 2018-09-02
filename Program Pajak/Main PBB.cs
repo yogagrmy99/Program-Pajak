@@ -121,7 +121,7 @@ namespace Program_Pajak
         {
             Main m = new Main();
             this.Hide();
-            m.Show();
+            //m.Show();
         }
 
         private void label9_Click(object sender, EventArgs e)
